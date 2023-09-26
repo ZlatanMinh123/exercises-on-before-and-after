@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+.heading {
+  position: relative;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+body {
+  padding-left: 100px;
+}
+
+.heading::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  top: -5px;
+  border-radius: 50%;
+  background: orange;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 600px;
+  height: 5px;
+  background: #ccc;
+  bottom: -10px;
+  left: 0;
+  border-radius: 99px;
+}
